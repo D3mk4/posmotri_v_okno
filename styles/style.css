@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
@@ -96,7 +96,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #fff;
-  font-family: 'Fira' 'Sans' Condensed;
+  font-family: Fira Sans Condensed;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -104,7 +104,7 @@ ol {
 }
 
 .title {
-  font-family: 'Oswald';
+  font-family: Oswald;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -136,7 +136,7 @@ ol {
 
 .content__video-card-description {
   color: #fff;
-  font-family: 'Fira' 'Sans' Condensed;
+  font-family: Fira Sans Condensed;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -167,6 +167,16 @@ ol {
   cursor: pointer;
 }
 
+.search-form__label-text {
+  appearance: none;
+  color: rgba(255, 255, 255, 0.70);
+font-family: Fira Sans Condensed;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
 }
@@ -184,7 +194,7 @@ ol {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   color: rgba(255, 255, 255, 0.7);
-  font-family: 'Fira' 'Sans' Condensed;
+  font-family: Fira Sans Condensed;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
