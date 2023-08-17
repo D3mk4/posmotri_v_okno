@@ -45,7 +45,6 @@ ol {
   display: flex;
   gap: 30px;
   align-items: flex-end;
-  margin: 133px 33px;
 }
 
 .search-form {
@@ -58,6 +57,7 @@ ol {
   overflow-y: auto;
   height: 298px;
   position: relative;
+  padding: 4px;
 }
 
 .content__details {
@@ -96,7 +96,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -104,7 +104,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -125,7 +125,7 @@ ol {
 
 .content__video-card-title {
   color: #fff;
-  font-family: 'Oswald';
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -136,7 +136,7 @@ ol {
 
 .content__video-card-description {
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -169,19 +169,19 @@ ol {
 
 .search-form__label-text {
   appearance: none;
-  color: rgba(255, 255, 255, 0.70);
-font-family: Fira Sans Condensed;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #fff;
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
 }
 
-.search-form__label:hover {
+.search-form__label:not(:has(.search-form__textfield)):hover {
   text-decoration: underline;
 }
 
@@ -194,7 +194,7 @@ line-height: normal;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   color: rgba(255, 255, 255, 0.7);
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -234,8 +234,8 @@ input[type='checkbox'] {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: '';
   display: flex;
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   background-color: #fff;
 }
 
@@ -247,7 +247,7 @@ input[type='checkbox'] {
   height: 34px;
   border: 1px solid #fff;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -264,6 +264,7 @@ input[type='checkbox'] {
 .button:focus-visible {
   outline: 1px solid #fff;
 }
+
 .button:hover {
   text-decoration: underline;
 }
