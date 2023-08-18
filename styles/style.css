@@ -179,6 +179,7 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .search-form__label:not(:has(.search-form__textfield)):hover {
@@ -255,6 +256,7 @@ input[type='checkbox'] {
   text-align: center;
   background-color: transparent;
   cursor: pointer;
+  outline-offset: 2px;
 }
 
 .button:focus {
